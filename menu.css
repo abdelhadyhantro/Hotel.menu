@@ -1,0 +1,228 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth; /* Makes clicking links scroll smoothly */
+}
+
+body {
+    background-color: #050303ee; /* Change from #111 to this Cream color */ /* 
+    Light grey background */
+    color: #333;
+    padding-bottom: 50px;
+}
+ .header-container {
+    /* Styles for the golden rectangle */
+    border: 1px solid gold; /* Adjust thickness and color as needed */
+    padding: 20px; /* Adjust padding inside the box */
+    text-align: center; /* Center the text horizontally */
+    margin: 50px auto; /* Center the box itself and add space above/below */
+    max-width: 600px; /* Adjust the width of the box */
+    background-color: black; /* Assuming your background is black */
+    color: gold; /* Default text color for inside the box */
+}
+
+.header-container h1 {
+    /* Style for LE ROYALE */
+    font-family: 'Your Chosen Font', sans-serif; /* Use your specific font */
+    font-size: 3em; /* Adjust size as needed, 'em' or 'px' or 'vw' */
+    color: gold; /* Ensure it's gold */
+    margin-bottom: 5px; /* Space between H1 and subtitle */
+    text-transform: uppercase; /* If you want it all caps */
+}
+
+.header-container .subtitle {
+    /* Style for LE Royal Hotel Beirut */
+    font-family: 'Your Chosen Font', sans-serif; /* Match your menu's font */
+    font-size: 1.2em; /* Adjust subtitle size */
+    color: gold; /* Ensure it's gold */
+    margin-top: 0; /* Remove default top margin */
+}
+
+/* You might need to adjust existing styles for h1 and p tags if they have global rules */
+/* --- HERO HEADER --- */
+.hero-header {
+   /*background: #2c3e50; /* Dark header like Amaleen night mode or dark theme */
+  /*  color: #222;
+    text-align: center;
+    padding: 2rem 1rem;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000');
+    background-size: cover;
+    background-position: center; */
+    .menu-header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #0a0a0a;
+}
+}
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+ }
+.logo-container h1 {
+    /*font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: #78610b; /* Gold color for luxury feel */
+     font-size: 2rem;
+    letter-spacing: 2px;
+
+    color: #c5a059; /* Gold Text */
+    margin-bottom: 0.5rem;
+     border: 1.5px solid #c5a059; /* Gold Border */
+    display: inline-block;
+    padding: 4rem 10rem;
+    position: relative; 
+    
+}
+
+/*.menu-header{
+    margin-top: 1px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #b1acac;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* --- STICKY NAV BAR --- */
+.sticky-nav {
+    position: sticky; /* THIS MAKES IT STICK */
+    top: 0;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 4px 6px rgba(5, 59, 43, 0.1);
+    z-index: 1000;
+    overflow-x: auto; /* Allows horizontal scroll on mobile */
+    white-space: nowrap; /* Keeps items in one line */
+    padding: 0 10px;
+}
+
+/* Hide scrollbar for neatness */
+.sticky-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-list {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-item a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+/* Active State (Highlighted) */
+.nav-item.active a {
+    color: #c5a059; /* Orange/Brown accent */
+    border-bottom: 3px solid rgb(0, 0, 0)
+}
+
+/* --- MENU SECTIONS --- */
+.menu-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    padding: 20px 15px;
+}
+
+.menu-section {
+    margin-bottom: 40px;
+    /* Offset for sticky header when scrolling */
+    scroll-margin-top: 80px; 
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 10px;
+    border-left: 5px solid #c5a059;
+    padding-left: 5px;
+    color:  #c5a059;
+}
+
+/* --- MENU CARDS (The Items) --- */
+.menu-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-card {
+    display: flex;
+    background: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s; 
+}
+
+.menu-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card-details {
+  
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.card-header h3 {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.price {
+     font-family: 'Playfair Display', serif; /* Same font as name */
+     font-style: oblique;
+    font-weight: 700;       /* Bold */
+    font-size: 1rem;      /* Same size as name */
+    color: #D4AF37;  
+}    
+
+.card-desc {
+   font-family: 'Lato', sans-serif; /* Keep description simple/clean */
+    font-style: italic;     /* Make it italic like the picture */
+    color: #999999;         /* Grey color */
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 400px) {
+    .menu-card img {
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Digital Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HERO SECTION (Logo & Cover) -->
+    <header class="hero-header">
+        <div class="logo-container">
+            <!-- Replace with your logo image if you have one -->
+          <!--<h1>LE ROYALE</h1>
+            <p>LE Royal Hotel Beirut</p>
+        </div>
+        <div class="header-info">
+            <span><i class="fa-solid fa-clock"></i> Open: 12:00 PM - 12:00 AM</span>
+            <span><i class="fa-solid fa-phone"></i> Call Us</span>
+        </div>
+    </header> -->
+    <header class="menu-header">
+        <div class="header-banner">
+            <h1>LE ROYALE</h1>
+            <p class="subtitle">LE Royal Hotel Beirut</p>
+            <div class="divider">✻</div>
+        </div>
+    </header>
+
+    <!-- STICKY NAVIGATION BAR -->
+    <nav class="sticky-nav">
+        <ul class="nav-list">
+            <!-- These links match the Section IDs below -->
+            <li class="nav-item active"><a href="#Starters">Starters</a></li>
+            <li class="nav-item"><a href="#Vegan Selection">Vegan Selection</a></li>
+            <li class="nav-item"><a href="#Main Courses">Main Courses</a></li>
+            <li class="nav-item"><a href="#From The Grill">From The Grill</a></li>
+            <li class="nav-item"><a href="#Desserts">Desserts</a></li>
+            <li class="nav-item"><a href="#Drinks">Drinks</a></li>
+        </ul>
+    </nav>
+
+    <!-- MENU CONTENT -->
+    <main class="menu-container">
+
+        <!-- SECTION 1: COLD MEZZA -->
+        <section id="Starters" class="menu-section">
+            <h2 class="section-title">Starters</h2>
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>Truffle Arancini</h3>
+                            <span class="price">$12</span>
+                        </div>
+                        <p class="card-desc">Crispy risotto balls, black truffle, parmesan cream.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="menu-card">
+                  <img src="https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?auto=format&fit=crop&w=800&q=80" class="background-pic" alt="Burrata & Fresh Tomatoes">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>Burrata & Fresh Tomatoes</h3>
+                            <span class="price">$18</span>
+                        </div>
+                        <p class="card-desc">Creamy burrata cheese, heirloom tomatoes, fresh basil, balsamic glaze..</p><br><strong style="color:#c5a059; font-size:0.8rem;">(Vegetarian)</strong></p>
+              
+               
+            </div>
+        </section>
+
+        <!-- SECTION 2: HOT MEZZA -->
+        <section id="Vegan Selection" class="menu-section">
+            <h2 class="section-title">Vegan Selection</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=cropp" alt="Roasted Cauliflower">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>Roasted Cauliflower</h3>
+                            <span class="price">$22</span>
+                        </div>
+                        <p class="card-desc">Oven-roasted with spices, served with creamy tahini dressing and pomegranate..</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="https://moribyan.com/batata-harra/attachment/batata-harra-is-a-lebanese-spicy-potato-dish-close-up-in-the-plate-vertical-top-view/?attachment_id=52398570" alt="Tabbouleh">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>Batata Harra</h3>
+                            <span class="price">$12</span>
+                        </div>
+                        <p class="card-desc">Crispy cubed potatoes sautéed with fresh coriander, garlic, red chili, and lemon juice.</p>
+                    </div>
+                    </div>
+                    <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1616168677028-d89069d3e86c?q=80&w=800&auto=format&fit=crop" alt="Warak Enab">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>Warak Enab</h3>
+                            <span class="price">$16</span>
+                        </div>
+                        <p class="card-desc">Vine leaves stuffed with rice, parsley, tomato, and mint, cooked in olive oil and lemon.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: SALADS -->
+        <section id="Main Courses" class="menu-section">
+            <h2 class="section-title">Main Courses</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=800&auto=format&fit=crop
+" alt="Steak">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>Ribeye Steak (300g)
+</h3>
+                            <span class="price">$45</span>
+                        </div>
+                        <p class="card-desc">Prime cut, served with pepper sauce and fries..</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>Lamb Chops</h3>
+                            <span class="price">$38</span>
+                        </div>
+                        <p class="rd-desc">Grilled with rosemary, served with roasted vegetables.</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=800&auto=format&fit=crop" alt="Fattoush">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>Fried Kebbeh</h3>
+                            <span class="price">$30</span>
+                        </div>
+                        <p class="rd-desc">Meat and burghul balls stuffed with minced meat.</p>
+                    </div>
+                    </div>
+                     <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?q=80&w=800&auto=format&fit=crop" alt="Fattoush">
+                    <div class="card-details">
+
+                        <div class="card-header">
+                            <h3>Truffle Risotto</h3>
+                            <span class="price">$27</span>
+                        </div>
+                        <p class="rd-desc"> Wild mushrooms, parmesan, fresh truffle shavings.
+
+.</p>
+                    </div>
+            </div>
+        </section>
+        
+        <!-- SECTION 4: GRILL -->
+        <section id="From The Grill" class="menu-section">
+            <h2 class="section-title">From The Grill</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&auto=format&fit=crop" alt="Mixed Grill">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>Mixed Grill</h3>
+                            <span class="price">$22.00</span>
+                        </div>
+                        <p class="card-desc">Selection of Taouk, Kafta, and Meat skewers.</p>
+                    </div>
+                </div>
+                   <section id="Desserts" class="menu-section">
+            <h2 class="section-title">Desserts</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?q=80&w=800&auto=format&fit=crop" alt="Chocolate Fondant">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>Chocolate Fondant</h3>
+                            <span class="price">$14</span>
+                        </div>
+                        <p class="card-desc">Warm center, vanilla bean ice cream.</p>
+                    </div>
+                    </div>
+                           <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=800&auto=format&fit=crop" alt="Tiramisu">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>Tiramisu</h3>
+                            <span class="price">$12</span>
+                        </div>
+                        <p class="card-desc">Classic italian coffee cake.</p>
+                    </div>
+                           </div>
+                   <section id="Drinks" class="menu-section">
+            <h2 class="section-title">Drinks</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>Water</h3>
+                            <span class="price">$2</span>
+                        </div>
+                        
+                    </div>
+                    </div>
+                           <div class="menu-card">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>orange juice</h3>
+                            <span class="price">$5</span>
+                        </div>
+
+                    </div>
+                           </div>
+                              <div class="menu-card">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>Pepsi</h3>
+                            <span class="price">$3</span>
+                        </div>
+
+    
+                    </div>
+                           </div>
+                              <div class="menu-card">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>7up</h3>
+                            <span class="price">$3</span>
+                        </div></div>
+            
+                           </div>
+                              <div class="menu-card">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3>coffee</h3>
+                            <span class="price">$5</span>
+                        </div>
+                    
+                    </div>
+            </div>
+        </section>
+
+        <div style="height: 300px; text-align:center; padding-top:50px; color:#888;">
+            <span><i class="fa-solid fa-clock"></i> Open: 12:00 PM - 12:00 AM</span>
+            <span><i class="fa-solid fa-phone"></i> Call Us</span>
+            
+        </div>
+
+    </main>
+
+    <script src="menu.js"></script>
+</body>
+</html>
